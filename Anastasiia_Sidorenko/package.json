@@ -1,0 +1,17 @@
+{
+  "name": "hw-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-flexbox": "node-sass flexbox/scss/index.scss -o flexbox/css",
+    "scss-grid": "node-sass grid/scss -o grid/css"
+  },
+  "author": "",
+  "license": "ISC"
+}
