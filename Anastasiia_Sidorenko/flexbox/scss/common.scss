@@ -1,0 +1,26 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    background: url(../../images/widget-background.png) no-repeat;
+    margin: 0 auto;
+    max-width: 696px;
+    height: 435px;
+    position: relative;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.font-bold {
+    font-weight: 700;
+}

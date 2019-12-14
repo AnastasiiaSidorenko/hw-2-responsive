@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  height: 100vh;
+  overflow: hidden; }
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  background: url(../../images/widget-background.png) no-repeat;
+  margin: 0 auto;
+  max-width: 696px;
+  height: 435px;
+  position: relative;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.font-bold {
+  font-weight: 700; }
+
+.top-block {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 44px;
+  margin-top: 78px; }
+  .top-block__item {
+    padding-right: 24px; }
+    .top-block__item .current-week-day {
+      font-size: 25px;
+      margin: 0; }
+    .top-block__item .current-date {
+      font-size: 12px;
+      margin: 0; }
+    .top-block__item .weather-degree {
+      font-size: 92px;
+      line-height: 92px; }
+    .top-block__item .weather-degree:after {
+      content: "\00b0";
+      font-size: 44px;
+      line-height: 44px;
+      vertical-align: top; }
+    .top-block__item .weather-area {
+      font-size: 22px; }
+  .top-block .wind-information {
+    margin-top: 23px;
+    display: flex; }
+    .top-block .wind-information .wind-picture {
+      margin-right: 10px; }
+    .top-block .wind-information .wind-value {
+      font-size: 25px;
+      margin: 0; }
+    .top-block .wind-information .wind-speed {
+      font-size: 12px; }
+
+.bottom-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.3); }
+  @media screen and (max-height: 400px) and (orientation: landscape) {
+    .bottom-block {
+      margin-bottom: 41px; } }
+  @media screen and (max-width: 570px) and (orientation: landscape) {
+    .bottom-block {
+      margin-bottom: 66px; } }
+  .bottom-block .weather-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0; }
+    .bottom-block .weather-list__item:last-child {
+      border-right: 0; }
+    .bottom-block .weather-list__item {
+      list-style-type: none;
+      padding: 0 30px;
+      border-right: 1px solid #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media screen and (max-width: 500px) {
+        .bottom-block .weather-list__item {
+          padding: 0 12px; } }
+      @media screen and (max-width: 320px) {
+        .bottom-block .weather-list__item {
+          padding: 0 7px; } }
+      .bottom-block .weather-list__item .week-days {
+        margin: 0;
+        font-size: 12px; }
+      .bottom-block .weather-list__item .degrees {
+        margin: 0;
+        font-size: 12px; }
