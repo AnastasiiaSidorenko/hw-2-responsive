@@ -1,13 +1,18 @@
 .bottom-block {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     align-items: center;
+    -ms-grid-row-align: end;
     align-self: end;
     margin-bottom: 15px;
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
     padding: 10px 0;
+    -ms-grid-row: 2;
 
     @media screen and (max-height: 400px) and (orientation:landscape) {
         margin-bottom: 41px;
@@ -17,48 +22,95 @@
         margin-bottom: 66px;
     }
 
-    .weather-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        padding: 0;
-        margin: 0;
+    &__item {
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: center;
 
-        &__item:last-child {
-            border-right: 0;
-        }
-
-        &__item {
+        .weather-list {
+            display: -ms-grid;
             display: grid;
-            grid-template-columns: 1fr;
+            -ms-grid-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            -ms-grid-rows: 1fr;
             grid-template-rows: 1fr;
-            place-items: center center;
-            list-style-type: none;
-            padding: 0 30px;
-            border-right: 1px solid #FFFFFF;
+            padding: 0;
+            margin: 0;
+    
+            &__item:last-child {
+                border-right: 0;
+            }
+    
+            &__item {
+                display: -ms-grid;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                -ms-grid-columns: 1fr;
+                -ms-grid-rows: 1fr;
+                place-items: center center;
+                list-style-type: none;
+                padding: 0 30px;
+                border-right: 1px solid #FFFFFF;
+                -ms-grid-column-align: center;
+    
+                @media screen and (max-width: 500px) {
+                    padding: 0 12px;
+                }
+    
+                @media screen and (max-width: 320px) {
+                    padding: 0 7px;
+                }
+    
+                .week-days {
+                    margin: 0;
+                    font-size: 12px;
+                    -ms-grid-row-align: center;
+                    -ms-grid-column-align: center;
+                }
+                
+                .image {
+                    width: 48px;
+                    height: 48px;
+                    -ms-grid-row: 2;
+                    -ms-grid-column-align: center;
+                }
 
-            @media screen and (max-width: 500px) {
-                padding: 0 12px;
+                .degrees {
+                    margin: 0;
+                    font-size: 12px;
+                    white-space: nowrap;
+                    -ms-grid-row-align: center;
+                    -ms-grid-column-align: center;
+                    -ms-grid-row: 3;
+                }
             }
 
-            @media screen and (max-width: 320px) {
-                padding: 0 7px;
+            &__item--ms-colomn-2 {
+                -ms-grid-column: 2;
             }
 
-            .week-days {
-                margin: 0;
-                font-size: 12px;
+            &__item--ms-colomn-3 {
+                -ms-grid-column: 3;
             }
-            
-            .degrees {
-                margin: 0;
-                font-size: 12px;
+
+            &__item--ms-colomn-4 {
+                -ms-grid-column: 4;
             }
         }
     }
 
+    
+
     &__item--right {
-        justify-self: right;
+        justify-self: end;
+    }
+
+    &__item--ms-colomn-2 {
+        -ms-grid-column: 2;
+    }
+
+    &__item--ms-colomn-3 {
+        -ms-grid-column: 3;
     }
 }
 
