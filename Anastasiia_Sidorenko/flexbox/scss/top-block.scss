@@ -4,9 +4,6 @@
     margin-right: 44px;
     margin-top: 78px;
 
-    &__item {
-        padding-right: 24px;
-
         .current-week-day{
             font-size: 25px;
             margin: 0; 
@@ -32,6 +29,9 @@
         .weather-area {
             font-size: 22px;
         }
+
+    &__item--right {
+        padding-right: 24px;
     }
 
     .wind-information {

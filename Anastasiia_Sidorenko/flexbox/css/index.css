@@ -5,7 +5,9 @@ body {
   font-weight: 300;
   color: #FFFFFF;
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  background: url(../../images/body-background.jpg) center no-repeat;
+  background-size: cover; }
 
 .widget {
   display: flex;
@@ -27,24 +29,24 @@ body {
   justify-content: flex-end;
   margin-right: 44px;
   margin-top: 78px; }
-  .top-block__item {
+  .top-block .current-week-day {
+    font-size: 25px;
+    margin: 0; }
+  .top-block .current-date {
+    font-size: 12px;
+    margin: 0; }
+  .top-block .weather-degree {
+    font-size: 92px;
+    line-height: 92px; }
+  .top-block .weather-degree:after {
+    content: "\00b0";
+    font-size: 44px;
+    line-height: 44px;
+    vertical-align: top; }
+  .top-block .weather-area {
+    font-size: 22px; }
+  .top-block__item--right {
     padding-right: 24px; }
-    .top-block__item .current-week-day {
-      font-size: 25px;
-      margin: 0; }
-    .top-block__item .current-date {
-      font-size: 12px;
-      margin: 0; }
-    .top-block__item .weather-degree {
-      font-size: 92px;
-      line-height: 92px; }
-    .top-block__item .weather-degree:after {
-      content: "\00b0";
-      font-size: 44px;
-      line-height: 44px;
-      vertical-align: top; }
-    .top-block__item .weather-area {
-      font-size: 22px; }
   .top-block .wind-information {
     margin-top: 23px;
     display: flex; }
@@ -63,7 +65,8 @@ body {
   margin-bottom: 15px;
   width: 100%;
   flex-wrap: wrap;
-  background: rgba(0, 0, 0, 0.3); }
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 0; }
   @media screen and (max-height: 400px) and (orientation: landscape) {
     .bottom-block {
       margin-bottom: 41px; } }
