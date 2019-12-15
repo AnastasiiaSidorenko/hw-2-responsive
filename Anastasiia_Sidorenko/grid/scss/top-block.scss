@@ -1,0 +1,56 @@
+.top-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 78px;
+    margin-right: 44px;
+
+        .current-week-day{
+            font-size: 25px;
+            margin: 0; 
+        }
+
+        .current-date {
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .weather-degree {
+            font-size: 92px;
+            line-height: 92px;
+            white-space: nowrap;
+        }
+
+        .weather-degree:after {
+            content: "\00b0";
+            font-size: 44px;
+            line-height: 44px;
+            vertical-align: top;
+        }
+        
+        .weather-area {
+            font-size: 22px;
+        }
+
+    &__item--center {
+        justify-self: center;
+    }
+
+    .wind-information {
+        margin-top: 23px;
+        display: flex;
+
+        .wind-picture {
+            margin-right: 10px;
+        }
+
+        .wind-value {
+            font-size: 25px;
+            margin: 0;
+        }
+
+        .wind-speed {
+            font-size: 12px;
+        }
+    }
+}
