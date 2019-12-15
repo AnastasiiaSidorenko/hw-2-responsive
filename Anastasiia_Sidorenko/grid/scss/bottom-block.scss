@@ -35,11 +35,11 @@
             grid-template-rows: 1fr;
             padding: 0;
             margin: 0;
-    
+
             &__item:last-child {
                 border-right: 0;
             }
-    
+
             &__item {
                 display: -ms-grid;
                 display: grid;
@@ -52,22 +52,22 @@
                 padding: 0 30px;
                 border-right: 1px solid #FFFFFF;
                 -ms-grid-column-align: center;
-    
+
                 @media screen and (max-width: 500px) {
                     padding: 0 12px;
                 }
-    
+
                 @media screen and (max-width: 320px) {
                     padding: 0 7px;
                 }
-    
+
                 .week-days {
                     margin: 0;
                     font-size: 12px;
                     -ms-grid-row-align: center;
                     -ms-grid-column-align: center;
                 }
-                
+
                 .image {
                     width: 48px;
                     height: 48px;
@@ -99,7 +99,7 @@
         }
     }
 
-    
+
 
     &__item--right {
         justify-self: end;
@@ -113,4 +113,3 @@
         -ms-grid-column: 3;
     }
 }
-
