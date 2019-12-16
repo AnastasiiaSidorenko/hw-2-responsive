@@ -120,7 +120,7 @@ body {
         grid-template-rows: 1fr;
         -ms-grid-columns: 1fr;
         -ms-grid-rows: 1fr;
-        place-items: center center;
+        justify-items: center;
         list-style-type: none;
         padding: 0 30px;
         border-right: 1px solid #FFFFFF;
