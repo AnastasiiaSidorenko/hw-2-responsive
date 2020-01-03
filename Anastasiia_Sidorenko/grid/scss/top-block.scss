@@ -9,6 +9,12 @@
     margin-top: 78px;
     margin-right: 44px;
 
+    @media screen and (max-width: 420px) and (orientation:portrait) {
+        width: 100%;
+        justify-content: space-around;
+        margin-right: 0;
+    }
+    
     .current-week-day {
         font-size: 25px;
         margin: 0;

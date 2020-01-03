@@ -38,6 +38,11 @@ body {
   -ms-grid-column-align: end;
   margin-top: 78px;
   margin-right: 44px; }
+  @media screen and (max-width: 420px) and (orientation: portrait) {
+    .top-block {
+      width: 100%;
+      justify-content: space-around;
+      margin-right: 0; } }
   .top-block .current-week-day {
     font-size: 25px;
     margin: 0; }
